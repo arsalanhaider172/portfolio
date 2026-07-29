@@ -1,0 +1,507 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #778873;
+}
+
+section {
+    
+    min-height: 100vh;
+
+}
+
+/* NAVIGATION SSECTION */
+.navbar ul li a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #5E4633;
+    font-weight: 600;
+}
+
+.navbar ul li {
+    display: flex;
+    height: 25px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.navbar {
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    align-items: center;
+    background: #DCCFC0;
+    position: fixed;
+    top: 0px;
+    padding-left: 3vw;
+}
+
+.left {
+    flex: 2;
+    font-size: 1.6rem;
+}
+
+.right {
+    flex: 3;
+}
+
+.right ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+.navbar ul li a:hover {
+    color: #A85D3B;
+    font-size: 1.4em;
+    transition: all;
+    transform: ease-out;
+    transition-duration: 0.2s;
+
+}
+
+#element {
+    color: rgb(55, 145, 197);
+}
+
+.dropdown {
+    background: #DCCFC0;
+    width: 2rem;
+    border-radius: 5px;
+    display: none;
+
+}
+
+@media (max-width: 768px) {
+    .right {
+        position: relative;
+    }
+
+    .dropdown {
+        display: block;
+        position: relative;
+        left: 35vw;
+        background: none;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    #list {
+        display: none;
+        position: absolute;
+        height: 15rem;
+        top: 3rem;
+        /* Below the button */
+        right: 0;
+        width: 120px;
+        border-radius: 20px;
+        background-color: #DCCFC0;
+        list-style: none;
+        gap: 2rem;
+        padding: 10px;
+        z-index: 1000;
+
+    }
+
+    #list li {
+        width: 100px;
+
+    }
+
+    #list.show {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    #list a:hover {
+        font-size: 1.1em;
+
+    }
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* HOME SECTION */
+.firstsec {
+    display: flex;
+    align-items: center;
+    color: #FDF6ED;
+    gap: 100px;
+}
+
+.leftsec {
+    flex: 1;
+}
+
+.rightsec {
+    flex: 1;
+}
+
+
+.rightsec {
+
+    margin-top: 8vmin;
+    border: 2px solid black;
+    max-width: 30vw;
+    height: 30vw;
+    border-radius: 100%;
+    margin-right: 10vmin;
+    background-image: url("haider.png");
+    background-size: cover;
+}
+
+.leftText {
+    height: 35vh;
+    max-width: 680px;
+}
+
+.leftsec {
+    margin-left: 3rem;
+    padding-left: 2rem;
+    font-size: 3rem;
+
+}
+#element {
+    color: #622B14;
+}
+.name {
+    color: #622B14;
+    font-weight: 600;
+    font-size: 1.15em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.btn a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.button {
+    height: 60px;
+}
+
+.btn {
+    margin-top: 45px;
+    width: 12rem;
+    height: 3.4rem;
+    font-size: 1.15rem;
+    background-color: #A85D3B;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    font-style: oblique;
+    cursor: pointer;
+}
+
+.btn {
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+#git,
+#linkedin {
+    color: #2e2015;
+    margin-top: 50px;
+    margin-left: 15px;
+    font-size: 2.5rem;
+}
+
+#git,
+#linkedin {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#git:hover,
+#linkedin:hover {
+    color: #DCCFC0;
+    transform: scale(1.1);
+}
+
+/*ABOUT SECTION*/
+.aboutsec {
+    max-width: 900px;
+    margin: auto;
+
+    padding: 40px 20px;
+    color: #FDF6ED;
+}
+
+
+.head {
+    padding-top: 80px;
+    text-align: center;
+    color: #4E220F;
+
+}
+
+.abt-me {
+    padding: 40px;
+    min-height: auto;
+
+    margin-top: 1rem;
+    font-size: 1.23rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* PROJECT SECTION */
+.projectsec {
+    max-width: 80vw;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 40px 20px;
+    color: #ffffff;
+}
+
+.project {
+
+    text-align: center;
+    color: #6ca9a5;
+}
+/* firstcard  */
+.cardrow {
+    margin-top: 5vmax;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    background:#DCCFC0;
+    width: 20vmax;
+    height: 20vmax;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#firstcard{
+    display: flex;
+    flex-direction: column;
+    border-radius:16px;
+    overflow:hidden;
+    gap: 5px;
+    transition: transform 0.5s ease;
+}
+
+#firstcard:hover {
+    transform: translateY(-8px);
+}
+#firstcard .img{
+    flex: 1;
+     background-image: url(tictactoe.png);
+    background-size: cover;
+    min-height: 7vmax;
+}
+#firstcard .info{
+    padding: 15px;
+    flex: 2;
+   text-align: center;
+   color:  #2e1910;
+}
+#firstcard .info h3{
+    padding-bottom: 5px;
+   
+}
+#firstcard .info #icon{
+    font-size: 1.5rem;
+    padding: 1px;
+    flex: 2;
+   text-align: center;
+   color:  #2e1910;
+}
+#firstcard .demo{
+     padding: 5px;
+    margin-top: 15px;
+    width: 80px;
+     background-color: #A85D3B;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    font-style: oblique;
+    cursor: pointer;
+}
+
+
+/* secondcard  */
+#secondcard{
+    display: flex;
+    flex-direction: column;
+    border-radius:16px;
+    overflow:hidden;
+    gap: 5px;
+    transition: transform 0.5s ease;
+}
+#secondcard:hover {
+    transform: translateY(-8px);
+}
+#secondcard .img{
+    flex: 1;
+     background-image: url(port.png);
+    background-size: cover;
+    min-height: 7vmax;
+    
+}
+#secondcard .info{
+    padding: 15px;
+    margin: 10px;
+    flex: 2;
+   text-align: center;
+   color:  #2e1910;
+}
+#secondcard .info h3{
+    padding-bottom: 5px;
+   
+}
+#secondcard .demo{
+     padding: 5px;
+    margin-top: 15px;
+    width: 80px;
+     background-color: #A85D3B;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    font-style: oblique;
+    cursor: pointer;
+}
+#secondcard .info h3{
+    padding-bottom: 5px;
+   
+}
+#secondcard .info #icon{
+    font-size: 1.5rem;
+    padding: 1px;
+    margin: 2px;
+    flex: 2;
+   text-align: center;
+   color:  #2e1910;
+}
+#secondcard .demo{
+     padding: 5px;
+    margin-top: 10px;
+    width: 80px;
+     background-color: #A85D3B;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    font-style: oblique;
+    cursor: pointer;
+}
+
+/* Third card */
+#thirdcard{
+    display: flex;
+    flex-direction: column;
+    border-radius:16px;
+    overflow:hidden;
+    gap: 5px;
+    transition: transform 0.5s ease;
+}
+#thirdcard:hover {
+    transform: translateY(-8px);
+}
+#thirdcard .img{
+    flex: 2;
+     background-image: url(weather-app.png);
+    background-size: cover;
+    min-height: 7vmax;
+}
+#thirdcard .info{
+    padding: 15px;
+    flex: 3;
+   text-align: center;
+   color:  #2e1910;
+}
+#thirdcard .info h3{
+    padding-bottom: 5px;
+   
+}
+#thirdcard .info #icon{
+    font-size: 1.5rem;
+    padding: 1px;
+    margin: 10px;
+    flex: 2;
+   text-align: center;
+   color:  #2e1910;
+}
+#thirdcard .demo{
+     padding: 5px;
+    margin-top: 15px;
+    width: 80px;
+     background-color: #A85D3B;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    font-style: oblique;
+    cursor: pointer;
+}
+/* for smaller screen */
+@media(max-width: 786px) {
+    .firstsec {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+
+    }
+
+    .rightsec {
+        margin-top: 12vh;
+        flex: 2;
+        order: 1;
+        width: 70vw;
+        height: 70vw;
+
+    }
+
+    .leftText {
+        height: 25vh;
+    }
+
+    .leftsec {
+        margin: 30px 10px 30px 10px;
+        padding-left: 2rem;
+        flex: 3;
+        order: 2;
+        font-size: 1.8rem;
+    }
+
+    #git {
+        width: 2rem;
+    }
+
+    #linkedin {
+        width: 2rem;
+    }
+    .cardrow {
+    margin-top: 5vmax;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    gap: 5px;
+}
+.card {
+    width: auto;
+    height: auto;
+}
+}
