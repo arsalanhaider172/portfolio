@@ -43,7 +43,7 @@ section {
     width: 100vw;
     height: 80px;
     align-items: center;
-    background: #559b6257;
+    background: #4269498a;
     position: fixed;
     top: 0px;
     padding-left: 3vw;
@@ -73,7 +73,7 @@ section {
     font-size: 1.4em;
     transition: all;
     transform: ease-out;
-    transition-duration: 0.2s;
+    transition-duration: 0.3s;
 
 }
 
@@ -84,6 +84,9 @@ section {
     border-radius: 5px;
     display: none;
 
+}
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 @media (max-width: 768px) {
@@ -136,9 +139,7 @@ section {
     }
 }
 
-.navbar {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-}
+
 
 /* HOME SECTION */
 .firstsec {
@@ -172,6 +173,7 @@ section {
 .leftText {
     height: 35vh;
     max-width: 680px;
+    margin-bottom: 2rem;
 }
 
 .leftsec {
@@ -197,7 +199,7 @@ html {
 
 .btn a {
     text-decoration: none;
-    color: #181414;
+    color: #2d3528e7;
 }
 
 .button {
@@ -205,10 +207,11 @@ html {
 }
 
 .btn {
-    margin-top: 45px;
-    width: 12rem;
-    height: 3.4rem;
+    
+    width: 8rem;
+    height: 2.5rem;
     font-size: 1.15rem;
+    font-weight: 550;
     background-color: #88b591;
     border: 1px solid #d4e7c1;
     border-radius: 25px;
@@ -216,31 +219,25 @@ html {
     cursor: pointer;
 }
 
-.btn {
-    transition: transform 0.3s ease;
-}
-
 .btn:hover {
-    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+    transform: translateY(-5px);
 }
 
 #git,
 #linkedin {
     color: #88b591;
-    margin-top: 50px;
-    margin-left: 15px;
+    margin-top: 10px;
+    /* margin-left: 15px; */
     font-size: 2.5rem;
 }
 
-#git,
-#linkedin {
-    transition: color 0.3s ease, transform 0.3s ease;
-}
 
 #git:hover,
 #linkedin:hover {
-    color: #DCCFC0;
+    color: #c0dcc3;
     transform: scale(1.1);
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 /*ABOUT SECTION*/
@@ -292,14 +289,13 @@ html {
 }
 
 .card {
-    background:#DCCFC0;
+    background:#2d3528e7;
     width: 20vmax;
     height: 20vmax;
-    border: 2px solid black;
+    border: 2px solid rgb(238, 231, 231);
     border-radius: 10px;
+    color: #d4e8dadd;    
         
-        
-
 }
 .card:hover{
     transform: translateY(-8px);
@@ -325,7 +321,7 @@ html {
     padding: 15px;
     flex: 1;
    text-align: center;
-   color:  #2e1910;
+   /* color:  #2e1910; */
 }
 #firstcard .info h3{
     padding-bottom: 5px;
@@ -336,19 +332,8 @@ html {
     padding: 1px;
     flex: 2;
    text-align: center;
-   color:  #2e1910;
+   /* color:  #36663c; */
 }
-#firstcard .demo{
-     padding: 5px;
-    margin-top: 15px;
-    width: 80px;
-     background-color: #A85D3B;
-    border: 1px solid #ffffff;
-    border-radius: 25px;
-    font-style: oblique;
-    cursor: pointer;
-}
-
 
 /* secondcard  */
 #secondcard{
@@ -364,7 +349,7 @@ html {
     flex: 1;
      background-image: url(port.png);
     background-size: cover;
-    min-height: 7vmax;
+    min-height: 45%;
     
 }
 #secondcard .info{
@@ -372,22 +357,12 @@ html {
     margin: 10px;
     flex: 1;
    text-align: center;
-   color:  #2e1910;
 }
 #secondcard .info h3{
     padding-bottom: 5px;
    
 }
-#secondcard .demo{
-     padding: 5px;
-    margin-top: 15px;
-    width: 80px;
-     background-color: #A85D3B;
-    border: 1px solid #ffffff;
-    border-radius: 25px;
-    font-style: oblique;
-    cursor: pointer;
-}
+
 #secondcard .info h3{
     padding-bottom: 5px;
    
@@ -400,16 +375,7 @@ html {
    text-align: center;
    color:  #2e1910;
 }
-#secondcard .demo{
-     padding: 5px;
-    margin-top: 10px;
-    width: 80px;
-     background-color: #A85D3B;
-    border: 1px solid #ffffff;
-    border-radius: 25px;
-    font-style: oblique;
-    cursor: pointer;
-}
+
 
 /* Third card */
 #thirdcard{
@@ -424,13 +390,13 @@ html {
     flex: 1;
      background-image: url(weather-app.png);
     background-size: cover;
-    min-height: 7vmax;
+    min-height: 40%;
 }
 #thirdcard .info{
     padding: 15px;
     flex: 3;
    text-align: center;
-   color:  #2e1910;
+   /* color:  #2e1910; */
 }
 #thirdcard .info h3{
     padding-bottom: 5px;
@@ -444,12 +410,12 @@ html {
    text-align: center;
    color:  #182e10;
 }
-#thirdcard .demo{
+.demo{
      padding: 5px;
     margin-top: 15px;
     width: 80px;
-     background-color: #A85D3B;
-    border: 1px solid #ffffff;
+     background-color: #88b591;
+    border: 1px solid #d4e7c1;
     border-radius: 25px;
     font-style: oblique;
     cursor: pointer;
