@@ -9,7 +9,7 @@ a {
 }
 
 body {
-    background-color: #778873;
+    background-color: #2d3528e7;
 }
 
 section {
@@ -24,7 +24,7 @@ section {
     text-align: center;
     font-weight: bold;
     font-size: 20px;
-    color: #5E4633;
+    color: #b2b8b2f1;
     font-weight: 600;
 }
 
@@ -43,7 +43,7 @@ section {
     width: 100vw;
     height: 80px;
     align-items: center;
-    background: #DCCFC0;
+    background: #559b6257;
     position: fixed;
     top: 0px;
     padding-left: 3vw;
@@ -51,7 +51,8 @@ section {
 
 .left {
     flex: 2;
-    font-size: 1.6rem;
+    font-size: 2rem;
+    color: #e3ece8d1;
 }
 
 .right {
@@ -68,7 +69,7 @@ section {
 
 
 .navbar ul li a:hover {
-    color: #A85D3B;
+    color: #85b99aa3;
     font-size: 1.4em;
     transition: all;
     transform: ease-out;
@@ -76,12 +77,9 @@ section {
 
 }
 
-#element {
-    color: rgb(55, 145, 197);
-}
 
 .dropdown {
-    background: #DCCFC0;
+    background: #10026c;
     width: 2rem;
     border-radius: 5px;
     display: none;
@@ -112,7 +110,7 @@ section {
         right: 0;
         width: 120px;
         border-radius: 20px;
-        background-color: #DCCFC0;
+        background-color: #6e502c;
         list-style: none;
         gap: 2rem;
         padding: 10px;
@@ -162,7 +160,7 @@ section {
 .rightsec {
 
     margin-top: 8vmin;
-    border: 2px solid black;
+    border: 2px solid rgb(246, 246, 246);
     max-width: 30vw;
     height: 30vw;
     border-radius: 100%;
@@ -183,10 +181,10 @@ section {
 
 }
 #element {
-    color: #622B14;
+    color: #89b898;
 }
 .name {
-    color: #622B14;
+    color: #74af95;
     font-weight: 600;
     font-size: 1.15em;
 }
@@ -199,7 +197,7 @@ html {
 
 .btn a {
     text-decoration: none;
-    color: #ffffff;
+    color: #181414;
 }
 
 .button {
@@ -211,8 +209,8 @@ html {
     width: 12rem;
     height: 3.4rem;
     font-size: 1.15rem;
-    background-color: #A85D3B;
-    border: 1px solid #ffffff;
+    background-color: #88b591;
+    border: 1px solid #d4e7c1;
     border-radius: 25px;
     font-style: oblique;
     cursor: pointer;
@@ -228,7 +226,7 @@ html {
 
 #git,
 #linkedin {
-    color: #2e2015;
+    color: #88b591;
     margin-top: 50px;
     margin-left: 15px;
     font-size: 2.5rem;
@@ -258,7 +256,7 @@ html {
 .head {
     padding-top: 80px;
     text-align: center;
-    color: #4E220F;
+    color: #1d1f1ef8;
 
 }
 
@@ -299,6 +297,13 @@ html {
     height: 20vmax;
     border: 2px solid black;
     border-radius: 10px;
+        
+        
+
+}
+.card:hover{
+    transform: translateY(-8px);
+    transition: transform 0.5s ease;
 }
 #firstcard{
     display: flex;
@@ -306,12 +311,10 @@ html {
     border-radius:16px;
     overflow:hidden;
     gap: 5px;
-    transition: transform 0.5s ease;
+  
 }
 
-#firstcard:hover {
-    transform: translateY(-8px);
-}
+
 #firstcard .img{
     flex: 1;
      background-image: url(tictactoe.png);
@@ -320,7 +323,7 @@ html {
 }
 #firstcard .info{
     padding: 15px;
-    flex: 2;
+    flex: 1;
    text-align: center;
    color:  #2e1910;
 }
@@ -354,11 +357,9 @@ html {
     border-radius:16px;
     overflow:hidden;
     gap: 5px;
-    transition: transform 0.5s ease;
+   
 }
-#secondcard:hover {
-    transform: translateY(-8px);
-}
+
 #secondcard .img{
     flex: 1;
      background-image: url(port.png);
@@ -369,7 +370,7 @@ html {
 #secondcard .info{
     padding: 15px;
     margin: 10px;
-    flex: 2;
+    flex: 1;
    text-align: center;
    color:  #2e1910;
 }
@@ -417,13 +418,10 @@ html {
     border-radius:16px;
     overflow:hidden;
     gap: 5px;
-    transition: transform 0.5s ease;
 }
-#thirdcard:hover {
-    transform: translateY(-8px);
-}
+
 #thirdcard .img{
-    flex: 2;
+    flex: 1;
      background-image: url(weather-app.png);
     background-size: cover;
     min-height: 7vmax;
@@ -444,7 +442,7 @@ html {
     margin: 10px;
     flex: 2;
    text-align: center;
-   color:  #2e1910;
+   color:  #182e10;
 }
 #thirdcard .demo{
      padding: 5px;
@@ -467,10 +465,11 @@ html {
 
     .rightsec {
         margin-top: 12vh;
+        margin-right: 0;
         flex: 2;
         order: 1;
-        width: 70vw;
-        height: 70vw;
+        min-width: 70vw;
+        min-height: 75vw;
 
     }
 
@@ -501,7 +500,10 @@ html {
     gap: 5px;
 }
 .card {
-    width: auto;
-    height: auto;
+    width: 80vw;
+    height: 60vh;
+}
+.card:hover{
+    transform: none;
 }
 }
