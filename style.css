@@ -9,11 +9,11 @@ a {
 }
 
 body {
-    background-color: #2d3528e7;
+    background-color: #232523e7;
 }
 
 section {
-    
+
     min-height: 100vh;
 
 }
@@ -43,7 +43,7 @@ section {
     width: 100vw;
     height: 80px;
     align-items: center;
-    background: #4269498a;
+    background: #263829d7;
     position: fixed;
     top: 0px;
     padding-left: 3vw;
@@ -52,11 +52,12 @@ section {
 .left {
     flex: 2;
     font-size: 2rem;
-    color: #e3ece8d1;
+    color: #e3ece8e2;
 }
 
 .right {
     flex: 3;
+    margin-right: 1rem;
 }
 
 .right ul {
@@ -79,14 +80,15 @@ section {
 
 
 .dropdown {
-    background: #10026c;
+
     width: 2rem;
     border-radius: 5px;
     display: none;
 
 }
+
 .navbar {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    box-shadow:0 0 1px 1px rgba(26, 122, 65, 0.755);
 }
 
 @media (max-width: 768px) {
@@ -113,7 +115,7 @@ section {
         right: 0;
         width: 120px;
         border-radius: 20px;
-        background-color: #6e502c;
+        background-color: #232523;
         list-style: none;
         gap: 2rem;
         padding: 10px;
@@ -145,7 +147,7 @@ section {
 .firstsec {
     display: flex;
     align-items: center;
-    color: #FDF6ED;
+    color: #f3fded;
     gap: 100px;
 }
 
@@ -157,11 +159,11 @@ section {
     flex: 1;
 }
 
-
 .rightsec {
 
     margin-top: 8vmin;
-    border: 2px solid rgb(246, 246, 246);
+    border: 2px solid rgb(5, 103, 27);
+    box-shadow: 0 1px 2px 1px rgb(123, 190, 78) ;
     max-width: 30vw;
     height: 30vw;
     border-radius: 100%;
@@ -171,9 +173,10 @@ section {
 }
 
 .leftText {
-    height: 35vh;
+    height: 40vh;
     max-width: 680px;
     margin-bottom: 2rem;
+
 }
 
 .leftsec {
@@ -182,9 +185,16 @@ section {
     font-size: 3rem;
 
 }
+
+#git-link-icon {
+    margin: 2px;
+    padding: 2px;
+}
+
 #element {
     color: #89b898;
 }
+
 .name {
     color: #74af95;
     font-weight: 600;
@@ -207,7 +217,7 @@ html {
 }
 
 .btn {
-    
+
     width: 8rem;
     height: 2.5rem;
     font-size: 1.15rem;
@@ -253,7 +263,7 @@ html {
 .head {
     padding-top: 80px;
     text-align: center;
-    color: #1d1f1ef8;
+    color:  #74af95c8;
 
 }
 
@@ -281,6 +291,7 @@ html {
     text-align: center;
     color: #6ca9a5;
 }
+
 /* firstcard  */
 .cardrow {
     margin-top: 5vmax;
@@ -289,137 +300,148 @@ html {
 }
 
 .card {
-    background:#2d3528e7;
+    background: #2d3528e7;
     width: 20vmax;
     height: 20vmax;
     border: 2px solid rgb(238, 231, 231);
     border-radius: 10px;
-    color: #d4e8dadd;    
-        
+    color: #d4e8dadd;
+
 }
-.card:hover{
+
+.card:hover {
     transform: translateY(-8px);
     transition: transform 0.5s ease;
 }
-#firstcard{
+
+#firstcard {
     display: flex;
     flex-direction: column;
-    border-radius:16px;
-    overflow:hidden;
+    border-radius: 16px;
+    overflow: hidden;
     gap: 5px;
-  
+
 }
 
 
-#firstcard .img{
+#firstcard .img {
     flex: 1;
-     background-image: url(tictactoe.png);
+    background-image: url(tictactoe.png);
     background-size: cover;
     min-height: 7vmax;
 }
-#firstcard .info{
+
+#firstcard .info {
     padding: 15px;
     flex: 1;
-   text-align: center;
-   /* color:  #2e1910; */
+    text-align: center;
+    
 }
-#firstcard .info h3{
+
+#firstcard .info h3 {
     padding-bottom: 5px;
-   
+
 }
-#firstcard .info #icon{
+
+#firstcard .info #icon {
     font-size: 1.5rem;
     padding: 1px;
     flex: 2;
-   text-align: center;
-   /* color:  #36663c; */
+    text-align: center;
 }
 
 /* secondcard  */
-#secondcard{
+#secondcard {
     display: flex;
     flex-direction: column;
-    border-radius:16px;
-    overflow:hidden;
+    border-radius: 16px;
+    overflow: hidden;
     gap: 5px;
-   
+
 }
 
-#secondcard .img{
+#secondcard .img {
     flex: 1;
-     background-image: url(port.png);
+    background-image: url(port.png);
     background-size: cover;
     min-height: 45%;
-    
+
 }
-#secondcard .info{
+
+#secondcard .info {
     padding: 15px;
     margin: 10px;
     flex: 1;
-   text-align: center;
-}
-#secondcard .info h3{
-    padding-bottom: 5px;
-   
+    text-align: center;
 }
 
-#secondcard .info h3{
+#secondcard .info h3 {
     padding-bottom: 5px;
-   
+
 }
-#secondcard .info #icon{
+
+#secondcard .info h3 {
+    padding-bottom: 5px;
+
+}
+
+#secondcard .info #icon {
     font-size: 1.5rem;
     padding: 1px;
     margin: 2px;
     flex: 2;
-   text-align: center;
-   color:  #2e1910;
+    text-align: center;
+    color: #2e1910;
 }
 
 
 /* Third card */
-#thirdcard{
+#thirdcard {
     display: flex;
     flex-direction: column;
-    border-radius:16px;
-    overflow:hidden;
+    border-radius: 16px;
+    overflow: hidden;
     gap: 5px;
 }
 
-#thirdcard .img{
+#thirdcard .img {
     flex: 1;
-     background-image: url(weather-app.png);
+    background-image: url(weather-app.png);
     background-size: cover;
     min-height: 40%;
 }
-#thirdcard .info{
+
+#thirdcard .info {
     padding: 15px;
     flex: 3;
-   text-align: center;
-   /* color:  #2e1910; */
+    text-align: center;
 }
-#thirdcard .info h3{
+
+#thirdcard .info h3 {
     padding-bottom: 5px;
-   
+
 }
-#thirdcard .info #icon{
+
+#thirdcard .info #icon {
     font-size: 1.5rem;
     padding: 1px;
     margin: 10px;
     flex: 2;
-   text-align: center;
-   color:  #182e10;
+    text-align: center;
+    color: #182e10;
 }
-.demo{
-     padding: 5px;
+
+.demo {
+    padding: 5px;
     margin-top: 15px;
     width: 80px;
-     background-color: #88b591;
+    background-color: #88b591;
     border: 1px solid #d4e7c1;
     border-radius: 25px;
     font-style: oblique;
     cursor: pointer;
 }
+
 /* for smaller screen */
 @media(max-width: 786px) {
     .firstsec {
@@ -458,18 +480,22 @@ html {
     #linkedin {
         width: 2rem;
     }
+
     .cardrow {
-    margin-top: 5vmax;
-    display: flex;
-    align-items: center;
-    flex-direction: column; 
-    gap: 5px;
-}
-.card {
-    width: 80vw;
-    height: 60vh;
-}
-.card:hover{
-    transform: none;
-}
+        margin-top: 5vmax;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .card {
+        width: 80vw;
+        height: 60vh;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
 }
